@@ -1,52 +1,15 @@
 <body>
-    <section class="container">
-        <div class="flip-horizontal-bottom">
-            
+    <h1>This is a test</h1>
+    <section class="container">        
+        <div class="flip-horizontal-bottom" 
+        *ngFor = "let pokemon of pokemons; index as i; first as isFirst">
+            <img width="200" height="200" [src]="pokemon.imgSource" alt="">
+                    {{i}}/{{pokemons.length}}. {{pokemon.name}}             
+            <!--div class="flip-horizontal-bottom" --
+                <img width="200" height="200" [src]="card.source" alt="">
+            <!--/div-->   
         </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
-        <div class="flip-horizontal-bottom">
-            
-        </div>
+        
     </section>
+    <p>Here  finish the test</p>
 </body>
